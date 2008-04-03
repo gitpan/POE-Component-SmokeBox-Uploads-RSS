@@ -1,13 +1,14 @@
 package POE::Component::SmokeBox::Uploads::RSS;
 
 use strict;
+use warnings;
 use Carp;
 use POE qw(Component::RSSAggregator Component::Client::HTTP);
 use HTTP::Request;
 use HTML::LinkExtor;
 use vars qw($VERSION);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 sub spawn {
   my $package = shift;
